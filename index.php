@@ -1,1 +1,1 @@
-<?php include_once("week-4-game.html"); ?>
+<?php include_once("index.html"); ?>
