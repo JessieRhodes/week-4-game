@@ -1,41 +1,67 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Crystal Collector Game</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel= "stylesheet" type="text/css" href="assets/css/style.css">
-  
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector</title>
 
-</head>
-<body>
-  <h1>Number to Guess: <span id="numberToGuess"></span></h1>
-    <p>A random number will appear at the beginning of each game. By clicking on a crystal, a specific amount will be added to your score.</p>
-  <br>
-    <p>The value of each crystal is hidden until you click it!</p>
-  <br>
-    <p>To win the game, your total score must match the random number. If your score goes above the random number, you lose the game. When the game restarts, the random number and the value of each crystal will change.</p>
-  <br>
+    <!-- jQuery Link -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <!-- Game Logic -->
+    <script type="text/javascript" src="assets/javascript/crystalsCollector.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <div >
-     <h2 id="wins"> Wins: </h2> 
-    </div>
-    <div >
-      <h2 id="losses"> Losses: </h2>
-    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <p id="playernumber"> Player Number: </p>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Font Style -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Poiret+One|Rajdhani" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="topContent">
 
-    <p id="updatemessage"> </p>
+      <h1 id="title">Crystal Collector Game!</h1>
 
-    <img src="assets/images/blue_crystal.jpg" alt= "blue crystal" id= "blue">
-    <img src="assets/images/green_crystal.jpg" alt= "green crystal" id= "green">
-    <img src="assets/images/purple_crystal.jpg" alt= "purple crystal" id= "purple">
-    <img src="assets/images/yellow_crystal.jpg" alt= "yellow crystal" id= "yellow">
+        <div id="rules-area">
+          <h4>You will be given a random number at the start of the game.</h4>
+           </n>
+          <h4>By clicking on one of the four crystals below, you will add a specific amount of points to your total score.</h4>
+          </n>
+          <h4>To win the game, match your total score to random number; you lose the game if your total score goes above the random number.</h4>
+          </n>
+          <h4>The value of each crystal is hidden from you until you click on it.</h4>
+          </n>
+          <h4>The game will change the values of each crystal every time the game starts. Good luck!</h4>
+        </div>
+    
+        <!-- Random Number Display -->
+        <div id="random-area"></div>
 
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-   <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <div>
+          <!-- Crystals -->
+          <div id="crystal-area"></div>
+        </div>
+
+        <div id="screen">
+        
+          <div id="score-title">Score:</div>
+          <!-- Score Display -->
+            <div id="score-area"></div>
+          
+            <div id="winArea"></div>
+          
+        </div>
 
 
-  
-</body>
+    </div> <!-- end top Content -->
+
+  </body>
 </html>

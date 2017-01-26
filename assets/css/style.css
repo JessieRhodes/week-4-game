@@ -1,26 +1,98 @@
-img{
-	width: 200px;
-    height: 200px;
-}
-h1 {
-	color: purple;
-	font-family: Arial, Times, serif;
-	font-weight: bold;
-	font-size: 40px;
-	text-align: center; 
-}
-p {
-	color: blue;
-	font-family: Arial, Times, serif;
-	font-style: italic;
-	font-size: 20px;
-	text-align: center;
-}
-h2 {
-	color: blue;
-	font-family: Arial, Times, serif;
-	font-style: italic;
-	font-size: 20px;
-	text-align: center;
+body {
+	background: rgba(36,204,255,1);
+	background: -moz-linear-gradient(top, rgba(36,204,255,1) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 28%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(36,204,255,1)), color-stop(26%, rgba(255,255,255,1)), color-stop(28%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(36,204,255,1) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 28%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(36,204,255,1) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 28%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(36,204,255,1) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 28%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(36,204,255,1) 0%, rgba(255,255,255,1) 26%, rgba(255,255,255,1) 28%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24ccff', endColorstr='#ffffff', GradientType=0 );
 
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#title{
+	width: 100%;
+	padding: 4px;
+	margin-bottom: 10px;
+	color: #14103B;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 70px;
+	font-family: 'Poiret One', cursive;
+	font-family: 'Bungee Shade', cursive; 
+}
+.topContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Poiret One', cursive;
+	font-family: 'Bungee Shade', cursive;
+	font-family: 'Rajdhani', sans-serif;
+
+}
+
+.Content {
+	display: flex;
+	justify-content: center;
+	align-items: space-around;
+	
+}
+
+#screen {
+	display: flex;
+	justify-content: center;
+	align-items: space-around;
+}
+
+#rules-area{
+	width: 800px;
+	height: 190px;
+	padding: 4px;
+	margin-top: 30px;
+	color: #14103B;
+	
+}
+
+h4 {
+	text-align: center;
+}
+#random-area {
+	width: 50px;
+	height: 50px;
+	padding: 4px;
+	color: #14103B;
+	font-size: 3vw;
+	
+}
+#score-area {
+	color: #14103B;
+	font-size: 3vw; 
+	margin-top: 7px;
+	margin-left: 5px;
+	margin-right: 15px;
+	
+}
+#score-title {
+	margin-top: 10px;
+	color: #14103B;
+	font-size: 30px;
+	display: flex;
+	
+}
+
+.crystals-button { display: inline; }
+
+.crystal-img {
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+#winArea {
+	height: 100px;
+	padding: 4px;
 }
